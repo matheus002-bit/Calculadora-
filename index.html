@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amostragem </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="/script.js"></script>
+
+
+<body style=" border-width: 30px">
+
+    <h1>Calculadora Amostral</h1>
+<div class="container">
+
+    <div class="form-group">
+        <label for="sc-input-population">População</label>
+        <input type="number" id="sc-input-population" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label for="sc-input-error">Erro amostral (%)</label>
+        <input type="number" id="sc-input-error" class="form-control" min="0" max="100">
+      </div>
+      
+      <div class="form-group">
+        <label for="sc-confidence">Nível de confiança</label>
+        <select class="form-control" id="sc-input-confidence">
+          <option value="90">90%</option>
+          <option value="95">95%</option>
+          <option value="99">99%</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="sc-response">Distribuição da população</label>
+        <select class="form-control" id="sc-input-response">
+          <option value="80">Mais homogênea (80/20)</option>
+          <option value="50">Mais heterogênea (50/50)</option>
+        </select>
+      </div>
+      
+      <input type="submit" id="sc-calculate" value="Calcular" class="btn btn-block btn-filled">
+      
+      <div class="row calculator-result" id="sc-result" style="display:none;">
+        <div class="col-md-10">
+          Resultado
+        </div>
+        <div class="col-md-2 text-center value">
+          <span id="sc-result-target">0</span>
+        </div>
+      </div>
+              </div>
+          </div>
+      
+          <div class="wpb_raw_code wpb_raw_js" >
+              <div class="wpb_wrapper">
+      </div>
+          </div>
+        </div>          
+</body>
